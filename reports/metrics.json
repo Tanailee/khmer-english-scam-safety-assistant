@@ -1,0 +1,80 @@
+{
+  "model_type": "Required engineered features + Logistic Regression",
+  "n_samples": 40000,
+  "n_safe": 20000,
+  "n_scam": 20000,
+  "test_size": 8000,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "roc_auc": 1.0,
+  "confusion_matrix": [
+    [
+      4000,
+      0
+    ],
+    [
+      0,
+      4000
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n        safe       1.00      1.00      1.00      4000\n        scam       1.00      1.00      1.00      4000\n\n    accuracy                           1.00      8000\n   macro avg       1.00      1.00      1.00      8000\nweighted avg       1.00      1.00      1.00      8000\n",
+  "numeric_features": [
+    "char_count",
+    "word_count",
+    "avg_word_len",
+    "digit_count",
+    "uppercase_ratio",
+    "exclamation_count",
+    "has_exclamation",
+    "question_count",
+    "contains_no",
+    "first_second_pronoun_count",
+    "log_length",
+    "has_url",
+    "has_phone",
+    "has_money",
+    "urgent_terms",
+    "action_terms",
+    "scam_word_hits",
+    "safe_word_hits",
+    "scam_word_density",
+    "safe_word_density"
+  ],
+  "required_assignment_features": [
+    "safe_word_hits as count of positive/safe words",
+    "scam_word_hits as count of negative/scam words",
+    "contains_no",
+    "first_second_pronoun_count",
+    "has_exclamation",
+    "log_length"
+  ],
+  "model_comparison": [
+    {
+      "model": "Required engineered features + Logistic Regression",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    {
+      "model": "TF-IDF + Multinomial Naive Bayes",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    {
+      "model": "TF-IDF + engineered features + Logistic Regression",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    }
+  ],
+  "split_strategy": "Top 80% of each class for training; final 20% of each class for testing."
+}

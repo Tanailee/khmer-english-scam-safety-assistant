@@ -1,0 +1,753 @@
+## assignment
+NATURAL LANGUAGE PRO
+CESSING
+ 
+M
+-
+DAS
+ 
+Mini Project
+ 
+2
+ 
+–
+ 
+Text 
+Classification
+ 
+ 
+Given a corpus of product reviews, build a text classifier to predict if an input review is positive or 
+negative. The corpus includes 
+2
+ 
+text files:
+ 
+
+ 
+positive
+-
+reviews.txt contains 
+20,000
+ 
+lines of reviews (one review per line) considered to be 
+positive
+ 
+
+ 
+negative
+-
+reviews.txt contains 
+20,000
+ 
+lines of negative reviews
+ 
+You can use the top 80% lines of each file as your training set. The rest will be used as a test set. You can 
+implement a
+ny classification model of your choice. It would be great to implement multiple models and 
+compare their results.
+ 
+Accuracy rate should be used as an evaluation metric.
+ 
+ 
+The following features should be extracted from each review:
+ 
+
+ 
+count of positive words
+ 
+
+ 
+co
+unt of negative words
+ 
+
+ 
+1 if the review contains the word ‘no’ or 0 otherwise
+ 
+
+ 
+count of 1
+st
+ 
+and 2
+nd
+ 
+pronouns (‘I’, ‘me’, ‘my’, ‘you’, ‘your’)
+ 
+
+ 
+1 if ‘!’ can be found in the review or 0 otherwise
+ 
+
+ 
+log(length of the review)
+ 
+You can add more features that you find 
+helpful in improving the classifier performance. You can find 
+two additional text files: 
+positive
+-
+words.txt and negative
+-
+words.txt
+ 
+which
+ 
+contain 2,006 positive words 
+and 4,783 negative words respectively
+.
+ 
+Write a report
+ 
+(max 2 pages)
+ 
+about 
+the features use
+d, 
+the architecture of the models implemented as 
+well as the results obtained from the experiments.
+ 
+ 
+ 
+ 
+ 
+
+## chapter_1
+Chapter 1 - Introduction to Information 
+Retrieval (IR)
+Theory and Lab session
+Department of Applied Mathematics and 
+Statistics (AMS)
+Institute of Technology of Cambodia
+Course: Information Retrieval Web Analytics
+Lecturer: Khean Vesal
+
+Introduction
+
+Introduction
+• Information retrieval (IR) is a process that enable the 
+effective and efficient retrieval of relevant 
+information from large collections 
+of unstructured or semi-structured data.
+• IR systems assist in searching for, locating, and
+presenting information that matches a user's
+search query or information need.
+
+• Information retrieval enables search engines used by 
+billions daily.
+• It provides access to documents, metadata, and 
+multimedia databases.
+• Applied advanced models and algorithms improve 
+search engine.
+• Applied techniques like vector search enhance 
+retrieval accuracy.
+Introduction
+
+A brief history of information retrieval
+• Information retrieval dates back to ancient libraries and archives.
+• The 1800s saw punch cards for data processing, and in 1931, Goldberg invented the 
+"Statistical Machine.”
+• The field became a scientific discipline in the mid -20th century with contributions from 
+Salton and Luhn.
+• The 1960s saw the development of the SMART system, introducing key IR concepts.
+• The 1970s brought probabilistic models and vector processing.
+• The late 1990s saw IR systems widely adopted with the rise of search engines.
+A brief history of information retrieval
+
+Type of information retrieval models
+• Boolean Model: Uses Boolean logic (AND, OR, NOT) for exact matching and ranking
+• Vector Space Model: Represents documents and queries as vectors, using cosine similarity 
+for ranking results based on relevance.
+• Probabilistic Model: Estimates the probability of document relevance.
+• Latent Semantic Indexing (LSI): Uses singular value decomposition (SVD) to capture 
+semantic relationships and contextual meaning in text.
+Why is information retrieval important?
+• The vast amount of data generated requires IR systems to make information accessible.
+• Information retrieval is essential across industries like academia, ecommerce, healthcare, 
+and defense.
+• IR acts as a human-machine interface for decision-making and knowledge discovery.
+• Search engines, ecommerce, digital libraries, and healthcare rely on IR for efficient data 
+retrieval.
+How does an information retrieval system work?
+Patil, Vinod, and Pramod Jadhav. "Integrating AI-Powered Chatbots and PDF 
+Processing for Enhanced Document Management: A Full-Stack AI SaaS Approach."
+How does an information retrieval system work?
+Sivarajkumar, S., Mohammad, H.A., Oniani, D. et al. Clinical Information Retrieval: 
+A Literature Review. J Healthc Inform Res 8, 313–352 (2024).
+
+Main components of an information retrieval system
+• Document collection: The dataset from which information is retrieved
+• Indexing component: Processes and maps terms to documents in an optimized structure
+• Query processor: Analyzes user queries for matching from the index
+• Ranking algorithm: Assigns relevance scores to documents
+• User interface: Allows users to submit queries and view results
+Benefits of information retrieval
+• IR systems provide efficient information access, saving time and effort.
+• They help knowledge discovery, helping users find trends and patterns.
+• IR systems enable personalization, perform results to user preferences.
+A brief of key components and features 
+
+Benefits of information retrieval
+
+Getting Start
+Examples:
+web pages, email, books, news 
+stories, scholarly papers, text 
+messages, Word, Powerpoint,
+PDF, forum postings, etc.
+Commonproperties
+Significant text content
+Some structure (e.g., title,
+author, date for papers;
+subject, gender,email)
+What is document?
+Documents vs Database Records
+• Database records (or tuples in relational databases) are typically made up of well -defined 
+fields (or attributes)
+• Example: bank records with account numbers, balances, names, addresses, social security 
+numbers, dates of birth, etc.
+• Easy to compare fields with well-defined semantics to queries in order to find matches 
+text is more difficult Elasticsearch vs noSǪL
+• Refers to the different models or approaches used to represent and compare documents
+within a search engine.
+• IR is not just about text or web searches but it also involves images, videos, sounds, and
+structured databases in different domains.
+• People doing IR work with different media (image retrieval: Google Lens), different types
+of search applications (Web search engines), and different tasks (recommending content)
+Dimension of IR
+Content Applications Tasks
+T ext Web search Ad hoc search
+Images Vertical search Filtering
+Video Enterprise search Classification
+Scanned docs Desktop search Ǫuestion answering
+Audio Forum search
+Music Literature search
+Dimension of IR
+Dimension of IR
+
+IR Tasks
+Ad-hoc search Filtering Classification Question Answering
+• Find relevant  
+documents  
+for a text  
+query
+• Identify  
+relevant  
+user 
+profiles  
+for a new  
+document
+• Identify relevant  
+labels for  
+documents
+• Give a specific  
+answer to a question
+The Comparing of IR and Search Engines
+Information Retrieval Search Engines
+Relevance
+• Effective ranking
+Evaluation
+• Testing and measuring
+Information needs
+• User interaction
+Performance
+• Efficient search and indexing
+Incorporating new data
+• Coverage and freshness
+Scalability
+• Growing with data and users
+Adaptability
+• Tuning for applications
+Specific problems
+• Spam
+Part 1: Create a Document Collection
+documents = {
+1: "Information retrieval is the process of finding relevant information from large collections of data",
+2: "Search engines like Google use information retrieval techniques",
+3: "Machine learning can improve search results",
+4: "Data science and artificial intelligence are important technologies",
+5: "Information retrieval systems help users find documents"
+}
+Practical - Basic Search System
+Part 2: Text Preprocessing
+import string
+processed_docs = {}
+for doc_id, text in documents.items():
+text = text.lower()
+text = text.translate(str.maketrans('', '', string.punctuation))
+processed_docs[doc_id] = text
+print(processed_docs)
+Practical - Basic Search System
+Part 3: Build a Simple Inverted Index
+inverted_index = {}
+for doc_id, text in processed_docs.items():
+words = text.split()
+for word in words:
+if word not in inverted_index:
+inverted_index[word] = []
+inverted_index[word].append(doc_id)
+print(inverted_index)
+Practical - Basic Search System
+Part 4: Query Processing
+query = input("Enter search keyword: ").lower()
+if query in inverted_index:
+print("Documents found:", inverted_index[query])
+else:
+print("No documents found")
+Practical - Basic Search System
+Part 5: Show the Matching Documents
+query = input("Enter search keyword: ").lower()
+if query in inverted_index:
+doc_ids = inverted_index[query]
+for doc_id in doc_ids:
+print(f"Document {doc_id}: {documents[doc_id]}")
+else:
+print("No documents found")
+Practical - Basic Search System
+• InformationRetrieval in Practice (Addison Westley,2008)
+• InformationRetrieval Handbook (2009)
+References
+Thank You!
+
+## chapter_2
+Slide 1: Chapter 2 – Web Scraping | Theory and Lab session | Department of Applied Mathematics and Statistics (AMS) | Institute of Technology of Cambodia | Course: Information Retrieval Web Analytics | Lecturer: Khean Vesal
+Slide 2: Introduction |  to Web Scraping | Web Scraping Techniques | Data Cleaning and Processing | Challenges in Web Scraping | Future of Web Scraping | References
+Slide 3: Introduction |  to Web Scraping | Definition and Importance | Understanding Web Scraping | Web scraping involves automatically extracting large amounts of data from website for analysis and decision making. | Significance in Data Gathering | It enables efficient collection of real-time data, supporting various industries like marketing and research.
+Slide 4: Introduction |  to Web Scraping | c)  Role in Competitive Analysis | Web scraping helps monitor competitors’ activities and market trends, providing strategic insights. | d)  Impact on Data-Driven Decision | By automating data collection, organizations can make faster, more informed decisions based on current information.
+Slide 5: Introduction |  to Web Scraping | Applications in Data Collection | Market Research and Analysis | Web scraping gathers data on consumer behavior, pricing, and product listings for comprehensive market insights. | Monitoring Social Media Trends | It extracts trending topics, user opinions, and engagement metrics from social platforms for strategic planning.
+Slide 6: Introduction |  to Web Scraping | c)  Real-Time Price Tracking | E-commerce sites use web scraping to monitor competitor pricing and adjust their own strategic accordingly. | d)  Content Aggregation | Aggregating news, blogs, and forums allows for centralized access to diverse information sources.
+Slide 7: Introduction |  to Web Scraping | Legal and Ethical Considerations | Respecting Website Terms of Service | Always review and adhere to website policies to avoid legal issues when scraping data. | Avoiding Data Privacy Violations | Ensure that personal data collected complies with privacy laws and ethical standards.
+Slide 8: Introduction |  to Web Scraping | c)  Implementing Responsible Scraping | Use techniques like rate limiting and respectful crawling to prevent server overloads. | d)  Understanding Legal Boundaries | Be aware of local and international laws governing data collection and intellectual property rights.
+Slide 9: Introduction |  to Web Scraping | Tools and Technologies Used | Python Libraries for Scraping | Tools like  | BeautifulSoup |  and  | Scrapy |  for facilitate efficient extraction and parsing of web data. | b)  Headless Browsers and Automation | Tools such as  | Selenium |  enable scraping of dynamic content by simulating user interaction. | c)  Cloud-Based Scraping Platforms | Services like  | Octoparse |  and  | Import.io  | provide scalable solutions for large-scale data extraction
+Slide 10: Introduction |  to Web Scraping | Tools and Technologies Used
+Slide 11: Web Scraping Techniques | Understanding HTML Structure | Lean how HTML tags and elements form the structure of web pages for effective data extraction. | Using Parsing Libraries | Utilize tools like  | BeautifulSoup |  or  | Cheerio |  to parse HTML content efficiently and accurately.
+Slide 12: Web Scraping Techniques | c)   Modifying DOM Elements | Manipulate the  | Document Object Model  | to navigate, add, or remove elements during scraping. | d)   Handling Dynamic Content | Implement techniques to parse and interact with JavaScript-rendered HTML for comprehensive scraping.
+Slide 13: Web Scraping Techniques | Using APIs for Data Access | Accessing Public APIs | Leverage public  | APIs |  to retrieve structured data directly from web services and platforms. | b)   Authentication Rate Limits | Understand API authentication methods and manage rate limits to ensure smooth data retrieval. | Parsing JSON and XML Responses | Extract relevant information from API responses formatted in JSON or XML for analysis.
+Slide 14: Web Scraping Techniques | Web Scraping Workflow
+Slide 15: Web Scraping Techniques | Web Scraping Example Workflow
+Slide 16: Hand-on Practices
+Slide 17: Information |   | Retrieval |   | in |   | Practice |   | (Addison |   | Westley, |   | 2008) | Information |   | Retrieval |   | Handbook |   | (2009) | https://edu.anarchocopy.org/Programming%20Languages/Python/Web%20Scraping%20with%20Python,%202nd%20Edition.pdf | https://colab.research.google.com/drive/18FmsY_a6TiGe0vcEtB13KY8Nz3Xeq8jn#scrollTo=view-in-github | https://colab.research.google.com/drive/1JHhCdZ0iWKQOX-tkDfewevAPIIN09OpA | https://github.com/kheanvesal/Web-Scraping | References
+Slide 18: Thank You!
+
+## chapter_3
+Chapter 3 – Web Crawling
+Theory and Lab session
+Department of Applied Mathematics and 
+Statistics (AMS)
+Institute of Technology of Cambodia
+Course: Information Retrieval Web Analytics
+Lecturer: Khean Vesal
+
+Web Crawling vs Scraping
+
+• Web crawling is the process by which we gather pages from the web, in order to index them 
+and support a search engine.
+• The main purpose is to learn about the different web pages on the internet. 
+• This kind of process is mostly operated by search engines. 
+• By applying the search algorithms to the data collected by the web crawlers, search engines 
+can provide the relevant links as a response for the request by the user.
+Introduction to Web Crawling
+Introduction to Web Crawling
+
+How Web Crawling Work?
+Kausar, M. A., Dhaka, V. S., & Singh, S. K. (2013). Web crawler: a review. International 
+Journal of Computer Applications, 63(2), 31-36.
+How Web Crawling Work?
+
+How Web Crawling Work?
+Example: Scraping Job Posts from a Website
+1. Identify seed URLs
+ https://job-site.com 
+2. Make requests & load content
+ Use Python (requests) to download the webpage HTML. 
+3. Extract links & content
+ Use BeautifulSoup to get: Job titles, Company names … 
+4. Queue new pages
+ Collect job detail links and visit each one to get more information. 
+5. Store data
+ Save results into: CSV file, database…
+• General Purpose Crawling: Purpose Web Crawler collects as many pages as it can from a 
+particular set of URL’s and their links.
+• Focused Crawling: Designed to collect documents only on a specific topic which can reduce 
+the amount of network traffic and downloads. 
+• Distributed Crawling: Multiple processes are used to crawl and download pages from the 
+Web.
+Web Crawling Techniques
+Parallel Web Crawling
+Kausar, M. A., Dhaka, V. S., & Singh, S. K. (2013). Web crawler: a review. International 
+Journal of Computer Applications, 63(2), 31-36.
+The comparing of Web Crawling vs Scraping
+Web Scraping Web Crawling
+The tool used is Web Scraper The tool used Web Crawler or Spiders
+It is used for downloading information It is used for indexing of Web pages
+It need not visit all the pages of website for 
+information
+It visits each and every page, until the last line for 
+information
+A Web Scraper doesn’t obey robots.txt in most of 
+cases Not all web crawlers obey robots.txt
+It is done on both small and large scale It is mostly employed in large scale
+Application areas include Retail Marketing, Equity 
+search, and Machine learning
+Used in search engines to give search results to 
+the user
+• Information Retrieval in Practice  (Addison Westley, 2008)
+• Information Retrieval Handbook (2009)
+• Mitchell, Ryan. Web scraping with python. " O'Reilly Media, Inc.", 2024.
+References
+Thank You!
+
+## chapter_4
+Chapter 4 – Document Representation and 
+Processing
+Theory and Lab session
+Department of Applied Mathematics and 
+Statistics (AMS)
+Institute of Technology of Cambodia
+Course: Information Retrieval Web Analytics
+Lecturer: Khean Vesal
+
+Content
+1) Tokenization
+2) Stop-word removal
+3) Stemming and lemmatization
+4) Normalization and case folding
+5) Handling special characters, numbers, and punctuation
+1). Tokenization
+
+1). Tokenization
+• Tokenization is a fundamental process that involves breaking down a stream of text into smaller units called 
+tokens. These tokens can range from individual characters to full words or phrases. 
+❑ Types of Tokenization:
+       Tokenization can be classified into several types based on how the text is segmented.
+• Word Tokenization: This is the most common method where text is divided into individual words.
+• Character Tokenization: In this method, text is split into individual characters. 
+• Sub-word Tokenization: It splits text into pieces that are bigger than letters but smaller than full words.
+• Sentence Tokenization: It breaks a paragraph into individual sentences, treating each sentence as a token.
+• N-gram Tokenization: It splits text into small groups of words or characters of size n.
+1). Tokenization
+❑ Types of Tokenization:
+       
+
+1). Tokenization
+❑ Tokenization Use Cases
+
+1). Tokenization
+❑ Tokenization Use Cases:
+• Information Retrieval: Tokenization is essential for indexing and searching in systems that store and retrieve 
+information efficiently based on words or phrases.
+• Search Engines: Use tokenization to process and understand user queries. By breaking down a query into tokens, 
+enhance efficiency match and return precise search results.
+• Machine Translation: Tools like Google Translate rely on tokenization to convert sentences from one language into 
+another. 
+• Speech Recognition: Voice assistants such as Siri and Alexa use tokenization to process spoken language. Command 
+is first converted into text and then tokenized, enabling the system to understand and execute it accurately.
+1). Tokenization
+❑ Tokenization Challenges:
+
+1). Tokenization
+Lab: Implementing Tokenization
+
+1). Tokenization
+
+2). Stop-word removal
+
+• Stopwords are the words in any language which does not add much meaning to a sentence. For some 
+search engines, these are some of the most common, short function words, such as the, is, at, which, 
+and on. In this case, stop words can cause problems when searching for phrases that include them, 
+particularly in names such as “The Who” or “Take That”.
+❑ When to remove stop words? Tasks that benefit from stopword removal:
+• Text classification and sentiment analysis
+• Information retrieval and search engines
+• Topic modelling and clustering
+• Keyword extraction
+2). Stop-word removal
+❑ When to remove stop words? Tasks that require preserving stopwords:
+• Machine translation (maintains grammatical structure)
+• Text summarization (preserves sentence coherence)
+• Question-answering systems (syntactic relationships matter)
+• Grammar checking and parsing
+       Khmer Stop-Word
+2). Stop-word removal
+
+❑ Categories of Stopwords:
+• Standard Stopwords: Common function words like articles ("a", "the"), conjunctions ("and", "but") and 
+prepositions ("in", "on")
+• Domain-Specific Stopwords: Words that are common in a specific field or context, like “patient” in 
+medical text.
+• Contextual Stopwords: Words with extremely high frequency in particular datasets
+• Numerical Stopwords: Digits, punctuation marks and single characters
+2). Stop-word removal
+❑ How to remove stop words in python using:
+❑ Remove Stop-Word for Khmer Data: install khmer-nltk
+2). Stop-word removal
+
+2). Stop-word removal
+Lab: Implementing Stop-word removal
+
+2). Stop-word removal
+
+3). Stemming and lemmatization
+
+3). Stemming and lemmatization
+• Stemming: it removes prefixes and suffixes to get the base form (stem) of a word, for example, the 
+words "running," "runner," and "runs" might all be stemmed to "run" or "runn," depending on the 
+stemming algorithm used.
+❑ How Stemming Works?
+•   Porter Stemmer: Uses simple rules to remove suffixes step by step.
+•   Snowball Stemmer: An improved version of Porter with better and more complete rules.
+•   Lancaster Stemmer: A stronger stemmer that may remove too much and over-simplify words.
+3). Stemming and lemmatization
+❑ Advantages and Disadvantages of Stemming:
+Benefits:
+• Simplicity: Stemming is simple and easy to use.
+• Speed: It is fast because it uses basic rules and does not consider context.
+Limitations:
+• Accuracy: Can produce stems that are not actual words, leading to less accurate results.
+• Over-Stemming: Can sometimes strip too much off a word (e.g., "running" to "runn").
+• Under-Stemming: Can sometimes strip too little off a word (e.g., "running" to "run").
+3). Stemming and lemmatization
+❑ Lemmatization vs. Stemming: Key Differences:
+
+3). Stemming and lemmatization
+❑ When to Use Lemmatization vs. Stemming:
+Use Lemmatization When:
+▪ Accuracy and context are crucial.
+▪ The task involves complex language understanding, such as chatbots, sentiment analysis, and machine translation.
+▪ The computational resources are sufficient to handle the additional complexity.
+Use Stemming When:
+▪ Speed and efficiency are more important than accuracy.
+▪ The task involves simple text normalization, such as search engines and information retrieval systems.
+▪ The computational resources are limited
+3). Stemming and lemmatization
+• Lemmatization: is the process of reducing words to their base or dictionary form, known as the lemma. 
+This technique considers the context and the meaning of the words, ensuring that the base form 
+belongs to the language's dictionary. For example, the words "running," "ran," and "runs" are all 
+lemmatized to the lemma "run”
+❑ How Lemmatization Works?
+•   Part-of-Speech (POS) Tagging: Identifying the grammatical category of each word (e.g., noun, verb, adjective).
+•   Morphological Analysis: Analyzing the structure of the word to understand its root form.
+•   Dictionary Lookup: Using a predefined vocabulary to find the lemma of the word.
+3). Stemming and lemmatization
+❑ Techniques in Lemmatization:
+•  Rule-Based Lemmatization: Uses predefined grammatical rules to transform words. For instance, removing the "-ed“
+      suffix from regular past tense verbs.
+•  Dictionary-Based Lemmatization: Looks up words in a dictionary to find their base forms.
+•  Machine Learning-Based Lemmatization: Employs machine learning models trained on annotated corpora to predict the
+      lemma of a word.
+3). Stemming and lemmatization
+❑ Advantages and Disadvantages of Lemmatization:
+Benefits:
+▪ Accuracy: Lemmatization provides more accurate results because it considers the context and meaning of words.
+▪ Standardization: Ensures words are reduced to their dictionary form, aiding in tasks like text normalization and 
+information retrieval.
+Limitations:
+▪ Complexity: Requires more computational resources and a comprehensive dictionary.
+▪ Dependency on POS Tagging: Requires accurate POS tagging, which adds to the processing overhead.
+Lab: Implementing Stemming and lemmatization
+3). Stemming and lemmatization
+3). Stemming and lemmatization
+
+4). Normalization and case folding
+• Normalization: Standardizing text to a consistent format (e.g., converting "U.S.A." to "USA").
+• Case Folding: Converting all text to a uniform case, typically lowercase. Case folding is one way to 
+reduce our vocabulary size and allow for better generalization. However, case normalization can lead to 
+a loss of valuable, important information.
+❑ Purpose: Ensures consistent representation of text for matching and retrieval.
+Techniques:
+▪ Case Folding: "Apple" and "apple" treated as the same.
+▪ Unicode normalization: Handles accents, diacritics (e.g., "café" → "cafe").
+▪ Standardizing formats: Dates, numbers, or abbreviations.
+4). Normalization and case folding
+Benefits:
+▪ Improves matching accuracy
+▪ Reduces vocabulary size
+▪ Simplifies text processing
+▪ Speeds up indexing and search
+Challenges:
+▪ May lose meaning (e.g., “US” vs. “us”)
+▪ Hard for multilingual text
+▪ Ambiguous with accents or symbols
+▪ Context-sensitive (brand names, acronyms)
+Lab: Implementing Normalization and case folding
+4). Normalization and case folding
+4). Normalization and case folding
+
+5). Handling special characters, numbers, and punctuation
+
+5). Handling special characters, numbers, and punctuation
+• To remove punctuation and special characters from text data, we aim to clean the text and retain only alphanumeric 
+characters and possibly spaces between words. 
+• This step is essential in text preprocessing as punctuation marks and special characters often do not carry significant 
+semantic meaning and can introduce noise in the data.
+Why Do We Need to Handle Punctuation and Special Characters?
+▪ Clarity: Punctuation helps convey meaning, but too much of it can confuse both readers and machines. For example, "I 
+can't believe it's 5 o'clock!" vs. "I can’t believe it’s 5 o’clock!!"—the extra punctuation can change the tone and clarity 
+of the message.
+▪ Data Quality: In IR, we want our data to be clean and meaningful. Special characters (like #, $, %, etc.) often don’t add 
+value to our analysis and can lead to misleading results.
+▪ Efficiency: The more unnecessary characters (or "noise") we have in our data, the harder it is for algorithms to learn 
+patterns. Cleaning up the text makes our models run faster and more accurately.
+Lab: Implementing Handling special characters, numbers, and 
+punctuation
+5). Handling special characters, numbers, and punctuation
+5). Handling special characters, numbers, and punctuation
+
+• Information Retrieval in Practice  (Addison Westley, 2008)
+• Information Retrieval Handbook (2009)
+• Mitchell, Ryan. Web scraping with python. " O'Reilly Media, Inc.", 2024.
+References
+Thank You!
+
+## chapter_5
+Chapter 5 – Bag of Words model
+Theory and Lab session
+Department of Applied Mathematics and 
+Statistics (AMS)
+Institute of Technology of Cambodia
+Course: Information Retrieval Web Analytics
+Lecturer: Khean Vesal
+
+Content
+❖ Understanding BoW models
+❖ Workflow of BoW
+❖ The importance of cleaning and preprocessing our data
+❖ BoW model Vs CBoW
+❖ Decoding the Essence of Word Representations
+❖ Workflow of CBoW
+❖ Application and Limitations of CBoW
+Bag of Words (BoW) models
+
+• The Bag of Words (BoW) model is a fundamental and representation technique in Natural Language 
+Processing (NLP) and Information Retrieval (IR) 
+• The BoW model represents a document as an unordered set or “bag” of its words, ignore grammar 
+and word order but considering the frequency of each word.
+• The resulting representation is a vector where each element corresponds to a unique word in the 
+vocabulary, and the value in each element reflects the frequency of that word in the document.
+Bag of Words (BoW) models
+Document vectors resulting from BoW approach
+Bag of Words (BoW) models
+• The basic idea behind Bag of Words is to simplify the complexity of language by converting a 
+document into an unordered set of words, removing any information about the order in which 
+the words appear and the grammatical structure of the sentences.
+Convert text into a Bag of Words (BoW)
+• The Bag-of-Words (BoW) model transforms text into a numerical vector by representing each 
+document or piece of text as a fixed-length vector that captures the frequency of words in a 
+vocabulary.
+Step 1: Tokenization
+Tokenization of a sentence
+Sentence: “The quick brown fox jumps over the lazy dog.”
+Resulting Tokens: [“The”, “quick”, “brown”, “fox”, “jumps”, “over”, “the”, “lazy”, “dog.”]
+Convert text into a Bag of Words (BoW)
+Step 2: Vocabulary Construction
+Build a vocabulary by collecting unique words from the entire corpus. Each unique word becomes a feature in 
+the BoW vector and has its unique index.
+Vocabulary of unique tokens.
+Convert text into a Bag of Words (BoW)
+Step 3: Vectorization
+Create a numerical vector based on the vocabulary for each document (sentence). The vector elements 
+represent the frequency of each word in the document.
+SAMPLE:
+Sentence: “The brown fox jumps over the lazy dog ”
+Vocabulary: {“the”: 0, “brown”: 1, “fox”: 2, “jumps”: 3, “over”: 4, “lazy”: 5, “dog”: 6, “oov”: 7}
+Vector: [2, 1, 1, 1, 1, 1, 1, 0] number of appeared
+Convert text into a Bag of Words (BoW)
+Explanation:
+But why the token “The” with capital t and the token “the” with small t 
+are mapped to the same token at vocab?
+• To understand the importance of text preprocessing in BoW models, let’s look at a few key 
+aspects:
+A. Noise Reduction:
+Remove punctuation, symbols, and irrelevant characters to keep only meaningful text.
+B. Stop Word Removal:
+Eliminate common words (like the, is, and) that add little meaning, reducing dimensionality.
+C. Lowercasing:
+Convert all text to lowercase to avoid treating words like Word and word as different.
+D. Stemming & Lemmatization:
+Normalize words to their root or dictionary form (e.g., running → run) to reduce vocabulary size 
+and capture similar meanings.
+Text Preprocessing Importance
+• In BoW, each document uses only a few words from the total vocabulary, resulting in vectors mostly 
+filled with zeros.
+Advantages:
+A. Computational Efficiency:
+Operations skip zero values, reducing processing time - especially useful for large or high-dimensional 
+datasets.
+B. Memory Efficiency:
+Only non-zero values are stored, saving memory and making it easier to handle large text collections.
+Sparse Representation in Bag of Words (BoW)
+A. Loss of Meaning:
+BoW ignores word order and context, so it can’t understand the true meaning of phrases or sentences.
+B. No Word Order:
+It only counts words and doesn’t know the sequence they appear in, losing important context.
+C. Document Length Issue:
+Longer documents may seem more important just because they have more words, making comparisons 
+harder .
+D. High Dimensionality:
+Large vocabularies create very big and sparse vectors, which can slow down processing and make 
+models less efficient.
+Challenges of Bag of Words
+A. N-grams and Phrases:
+Consider sequences of words (like bigrams or trigrams) to capture some word order and meaning.
+B. TF-IDF (Term Frequency-Inverse Document Frequency):
+Weigh words based on importance - common words get lower weight, rare but meaningful words get 
+higher weight - also helps with varying document lengths.
+C. Word Embeddings (e.g., word2vec):
+Use models like Skip-Gram or CBOW to capture semantic meaning and relationships between words for 
+a richer representation.
+Considerations 
+BoW Lab
+A. Bag of Words (BoW):
+o  Represents a document as an unordered set of words, ignoring grammar and word order .
+o Each word is independent, and the vector records word frequencies.
+o Simple and frequency-based, but it cannot capture context or meaning between words.
+B.  Continuous Bag of Words (CBOW):
+o A word embedding model that predicts a target word using its surrounding context words.
+o Uses a fixed-size context window and combines vectors of context words to learn the target word’s 
+representation.
+o Captures semantic meaning and relationships between words.
+Similar but different BoW models
+o Context Extraction: Slide a fixed-size window over text to collect surrounding words for each target 
+word.
+o Training Objective: Maximize the probability of predicting the target word from its context.
+o Word Embeddings: Hidden layer weights become vector representations of words.
+o Semantic Relationships: Words with similar meanings have similar vectors, enabling the model to 
+understand relationships between words.
+CBoW Work
+A. Input Layer:
+o Takes the context words within a fixed-size window around the target word.
+B.  Hidden Layer:
+o Functions as an embedding lookup layer, converting input words into dense vectors.
+o The weights learned here capture semantic relationships between words.
+C.  Output Layer:
+o Predicts probabilities for each word in the vocabulary as the target word.
+o Uses a softmax function to turn raw scores into probabilities.
+CBOW Architecture
+CBOW Architecture
+CBOW Model architecture
+Workflow of CBOW
+Applications of CBoW:
+o Text Classification
+o Sentiment Analysis
+o Information Retrieval
+o Question Answering
+CBoW Lab
+Topic: Researching the Workflow of CBoW
+Objective: Understand key components and their roles.
+Steps:
+1. Group Research:
+a) Input Layer: Collect context words; understand context window.
+b) Hidden Layer: Learns embeddings of words.
+c) Output Layer: Predict target word probabilities using softmax.
+d) Training Objective: Goal is to minimize prediction error via backpropagation.
+2. Quick Presentation:
+1.Each group presents for 10 minutes.
+Class Activity
+• Information Retrieval in Practice  (Addison Westley, 2008)
+• Information Retrieval Handbook (2009)
+• Mitchell, Ryan. Web scraping with python. " O'Reilly Media, Inc.", 2024.
+References
+Thank You!
+
+## chapter_2_assignment
+Assignment   1. Scrap data for Khmer Job Data Source Ideas: ex. BongThom, CamHR… Task: + Scrape job postings:  o Job title  o Company name  o Location  o Description                  + Save to CSV file. 2. Scrap data for Khmer News Data Source: ex. Fresh News, Khmer Times  Task: + Scrape news articles:  o Title  o Content  o Category (if available)                    + Save to CSV file.       Classify into: Politics / Economy / Technology / Education *Note: can using any method for scrapping data.    

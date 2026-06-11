@@ -1,0 +1,6 @@
+type,message,why
+Password / OTP theft,សូមផ្ញើលេខសម្ងាត់គណនីរបស់អ្នកដើម្បីបញ្ជាក់,Asks for account password
+Fake bank support,គណនី ABA របស់អ្នកត្រូវបានចាក់សោ សូមផ្ញើ OTP ឥឡូវនេះ,Fake bank lock plus OTP
+Prize scam,អ្នកឈ្នះរង្វាន់ សូមផ្តល់លេខគណនីធនាគាររបស់អ្នក,Prize plus bank details
+Delivery fee scam,បន្ទាន់ សូមបង់ថ្លៃដឹកជញ្ជូនតាមតំណនេះ,Urgent delivery payment
+Password / OTP theft,Give me your account password,Direct private credential request

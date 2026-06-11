@@ -1,0 +1,98 @@
+{
+  "model_type": "Hybrid realistic detector: word TF-IDF + character TF-IDF + engineered features + credential-risk rules",
+  "n_samples_total": 45579,
+  "n_augmented": 5579,
+  "accuracy_on_original_test": 1.0,
+  "precision_on_original_test": 1.0,
+  "recall_on_original_test": 1.0,
+  "f1_on_original_test": 1.0,
+  "roc_auc_on_original_test": 1.0,
+  "confusion_matrix_original_test": [
+    [
+      4000,
+      0
+    ],
+    [
+      0,
+      4000
+    ]
+  ],
+  "classification_report_original_test": "              precision    recall  f1-score   support\n\n        safe       1.00      1.00      1.00      4000\n        scam       1.00      1.00      1.00      4000\n\n    accuracy                           1.00      8000\n   macro avg       1.00      1.00      1.00      8000\nweighted avg       1.00      1.00      1.00      8000\n",
+  "demo_predictions": [
+    {
+      "text": "Give me you account password",
+      "ml_probability": 0.524047589815281,
+      "rule_score": 4,
+      "hybrid_probability": 0.8,
+      "prediction": "scam",
+      "signals": [
+        "Requests private credentials or account secrets"
+      ]
+    },
+    {
+      "text": "Never give anyone your account password",
+      "ml_probability": 0.5586464953449425,
+      "rule_score": 0,
+      "hybrid_probability": 0.2,
+      "prediction": "safe",
+      "signals": [
+        "Educational/protective context detected"
+      ]
+    },
+    {
+      "text": "Please send your OTP code now to keep your account active",
+      "ml_probability": 0.8562562790408759,
+      "rule_score": 6,
+      "hybrid_probability": 0.99,
+      "prediction": "scam",
+      "signals": [
+        "Requests private credentials or account secrets",
+        "Uses urgency or account-pressure language",
+        "Combines trusted service wording with action request"
+      ]
+    },
+    {
+      "text": "Can you explain how to create a strong password?",
+      "ml_probability": 0.002857214609831277,
+      "rule_score": 0,
+      "hybrid_probability": 0.002857214609831277,
+      "prediction": "safe",
+      "signals": []
+    },
+    {
+      "text": "Your package is delayed. Pay the small fee at http://delivery-check.example",
+      "ml_probability": 0.9882826184852948,
+      "rule_score": 4,
+      "hybrid_probability": 0.9882826184852948,
+      "prediction": "scam",
+      "signals": [
+        "Contains a link",
+        "Mentions money, fee, refund, or prize"
+      ]
+    }
+  ],
+  "note": "Original test data remains highly separable. Realistic augmented examples and the rule layer fix high-risk credential requests that were missed by the clean corpus model.",
+  "real_life_upgrade": {
+    "extra_scam_examples": 86,
+    "extra_safe_examples": 41,
+    "focus": [
+      "Khmer-English SMS, email, chat, and social-message scams",
+      "Critical credential/OTP/password triggers",
+      "Phishing, relationship, investment, account takeover, marketplace, threat, job, unexpected money, BEC, recovery, donation, bank, delivery, loan, and gambling/deposit scams",
+      "Safe educational and public-warning messages as hard negatives"
+    ],
+    "taxonomy_categories": [
+      "Phishing scams",
+      "Relationship scams",
+      "Investment scams",
+      "Account or identity takeover scams",
+      "Buying and selling scams",
+      "Threat scams",
+      "Jobs and employment scams",
+      "Unexpected money scams",
+      "Business email compromise scams",
+      "Money recovery scams",
+      "Donation scams"
+    ]
+  }
+}

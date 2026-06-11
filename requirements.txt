@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+pillow
+pytesseract
+easyocr
+opencv-python-headless
+sentence-transformers
+torch
+pypdf
+python-pptx

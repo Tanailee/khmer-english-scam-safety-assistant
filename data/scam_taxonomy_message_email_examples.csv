@@ -1,0 +1,58 @@
+category,label,text,channel
+Phishing scams,scam,Security alert: your email account will be disabled today. Click the link and enter your password to keep access.,message_text_email
+Phishing scams,scam,Your bank profile is incomplete. Verify your identity at this secure link and submit your OTP.,message_text_email
+Phishing scams,scam,Microsoft 365 notice: mailbox storage is full. Login now to avoid losing incoming emails.,message_text_email
+Phishing scams,scam,We detected unusual activity on your wallet. Confirm your seed phrase to restore access.,message_text_email
+Relationship scams,scam,"I love you and want to visit you soon, but my card is blocked. Please send 300 USD for my ticket.",message_text_email
+Relationship scams,scam,My family has an emergency and I trust only you. Transfer money today and I will repay you after we meet.,message_text_email
+Relationship scams,scam,Please keep our relationship private. Buy gift cards and send the codes so I can solve my problem.,message_text_email
+Relationship scams,scam,I am stuck overseas and cannot video call. Send money to help me come to Cambodia.,message_text_email
+Investment scams,scam,"Guaranteed crypto profit: deposit 100 USD today and withdraw 1,000 USD tomorrow.",message_text_email
+Investment scams,scam,Exclusive investment group. Transfer money now and earn 30 percent every week with no risk.,message_text_email
+Investment scams,scam,Your trading account has profit waiting. Pay the release tax before withdrawal.,message_text_email
+Investment scams,scam,"Join our gold investment plan. Limited seats, send ABA transfer screenshot to activate.",message_text_email
+Account or identity takeover scams,scam,Your Telegram account will be locked. Send the login code to verify ownership.,message_text_email
+Account or identity takeover scams,scam,Facebook support: your page violates policy. Provide password and verification code to appeal.,message_text_email
+Account or identity takeover scams,scam,Someone tried to access your bank account. Reply with OTP so we can secure it.,message_text_email
+Account or identity takeover scams,scam,"Your SIM card registration failed. Submit ID number, date of birth, and PIN immediately.",message_text_email
+Buying and selling scams,scam,I want to buy your phone. I sent extra payment by courier escrow; pay the delivery fee to receive funds.,message_text_email
+Buying and selling scams,scam,Your marketplace order is confirmed. Click the link and enter card details to release payment.,message_text_email
+Buying and selling scams,scam,Seller protection requires a refundable verification fee before we send the buyer money.,message_text_email
+Buying and selling scams,scam,The buyer paid through secure shipping. Pay customs first so the payment can appear in your account.,message_text_email
+Threat scams,scam,We recorded your private video. Pay 500 USD in Bitcoin within 24 hours or we send it to your contacts.,message_text_email
+Threat scams,scam,Final warning from police department: pay this fine now or your case will be sent to court.,message_text_email
+Threat scams,scam,Your phone is hacked. Transfer money to this wallet or all photos will be leaked.,message_text_email
+Threat scams,scam,You missed a legal notice. Click here and pay the penalty immediately to avoid arrest.,message_text_email
+Jobs and employment scams,scam,Remote job approved. Pay 15 USD registration fee and submit your bank account to receive salary.,message_text_email
+Jobs and employment scams,scam,Work from home: complete tasks and earn daily commission. Deposit first to unlock higher orders.,message_text_email
+Jobs and employment scams,scam,"HR department selected you. Send passport copy, bank account, and training payment today.",message_text_email
+Jobs and employment scams,scam,Part-time job on Telegram. Transfer money to activate your employee account.,message_text_email
+Unexpected money scams,scam,You have received an inheritance fund. Pay clearance fee and submit bank details to claim.,message_text_email
+Unexpected money scams,scam,"Congratulations, you won a cash prize. Send your account number and OTP to receive money.",message_text_email
+Unexpected money scams,scam,Government refund available. Click the link and enter card number before midnight.,message_text_email
+Unexpected money scams,scam,International transfer pending. Pay anti-money-laundering certificate fee to release funds.,message_text_email
+Business email compromise scams,scam,"Hi finance team, I am in a meeting. Urgently wire 18,750 USD to this new supplier account today.",message_text_email
+Business email compromise scams,scam,Please update vendor banking details to the attached account and process payment before 3 PM.,message_text_email
+Business email compromise scams,scam,CEO request: buy gift cards for clients and send me the codes by email.,message_text_email
+Business email compromise scams,scam,Our invoice bank account changed. Kindly pay the outstanding balance to the new account below.,message_text_email
+Money recovery scams,scam,We recovered your lost scam money. Pay a small processing fee so we can return the full amount.,message_text_email
+Money recovery scams,scam,Anti-fraud agency notice: your stolen funds are ready. Send ID and transfer recovery tax today.,message_text_email
+Money recovery scams,scam,Crypto recovery expert here. Pay upfront wallet validation fee and we restore your coins.,message_text_email
+Money recovery scams,scam,Your previous investment loss can be refunded. Click the link and enter bank details.,message_text_email
+Donation scams,scam,Urgent disaster donation: send money to this personal ABA account to help victims now.,message_text_email
+Donation scams,scam,Charity for sick children. Transfer today; no receipt available because the hospital needs cash.,message_text_email
+Donation scams,scam,Temple rebuilding fund: send your card details and OTP to complete donation.,message_text_email
+Donation scams,scam,Emergency fundraiser. Click this shortened link and pay immediately before campaign closes.,message_text_email
+Safe education / public awareness,safe,This article explains phishing scams and reminds readers never to enter passwords from email links.,message_text_email
+Safe education / public awareness,safe,Relationship scam awareness training: do not send money to someone you have never met in person.,message_text_email
+Safe education / public awareness,safe,Investment safety lesson: guaranteed high returns with no risk are a warning sign.,message_text_email
+Safe education / public awareness,safe,Account takeover prevention: enable two-factor authentication and never share login codes.,message_text_email
+Safe education / public awareness,safe,Marketplace safety guide: meet in public places and do not pay verification fees.,message_text_email
+Safe education / public awareness,safe,Threat scam warning: report blackmail messages and do not pay attackers.,message_text_email
+Safe education / public awareness,safe,Job scam education: real employers do not ask applicants to pay a fee before starting work.,message_text_email
+Safe education / public awareness,safe,Unexpected money scam warning: inheritance and prize messages asking for fees are suspicious.,message_text_email
+Safe education / public awareness,safe,Business email compromise training: verify bank-account changes by phone before payment.,message_text_email
+Safe education / public awareness,safe,Money recovery scam warning: recovery agents asking upfront fees are often scammers.,message_text_email
+Safe education / public awareness,safe,Donation safety notice: donate only through official charity websites and request receipts.,message_text_email
+Safe education / public awareness,safe,NoDrug public health message: download and use the app together for a Cambodia without drugs.,message_text_email
+Safe education / public awareness,safe,HIV prevention awareness: stay informed and protect your health through official public campaigns.,message_text_email

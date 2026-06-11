@@ -1,0 +1,51 @@
+{
+  "rows": 5375,
+  "label_counts": {
+    "safe": 4530,
+    "scam": 845
+  },
+  "language_counts": {
+    "en": 5359,
+    "km": 16
+  },
+  "source_counts": {
+    "UCI SMS Spam Collection": 5158,
+    "Synthetic realistic scam templates": 175,
+    "Public report pattern synthesis": 18,
+    "Manual safe educational contrast examples": 14,
+    "Manual Khmer scam examples": 10
+  },
+  "sources": [
+    {
+      "name": "UCI SMS Spam Collection",
+      "type": "public_dataset",
+      "url": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+      "note": "Public ham/spam SMS corpus by Almeida, Hidalgo, and Yamakami."
+    },
+    {
+      "name": "FTC / public consumer warnings",
+      "type": "public_report_patterns",
+      "url": "https://consumer.ftc.gov/",
+      "note": "Used only to create paraphrased scam-pattern examples: tolls, delivery, job/task scams, prizes, account warnings."
+    },
+    {
+      "name": "USPS / postal inspection smishing warnings",
+      "type": "public_report_patterns",
+      "url": "https://www.uspis.gov/",
+      "note": "Used only to create paraphrased delivery-smishing examples and safe advice examples."
+    },
+    {
+      "name": "Smishing Dataset I: Phishing SMS Dataset from Smishtank.com",
+      "type": "research_reference",
+      "url": "https://arxiv.org/abs/2402.18430",
+      "note": "Research reference for smishing data categories. Direct bulk download was not assumed."
+    },
+    {
+      "name": "Public Khmer/manual examples",
+      "type": "manual_and_synthetic",
+      "url": "local",
+      "note": "Manually authored Khmer/English examples for Cambodian banking, delivery, OTP, prize, loan, job, and safe education contexts."
+    }
+  ],
+  "ethics": "Only public datasets and manually/synthetically authored non-private messages are used. Do not collect private user SMS without consent."
+}

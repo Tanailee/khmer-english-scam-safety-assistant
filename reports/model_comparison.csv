@@ -1,0 +1,4 @@
+model,accuracy,precision,recall,f1,roc_auc
+Required engineered features + Logistic Regression,1.0,1.0,1.0,1.0,1.0
+TF-IDF + Multinomial Naive Bayes,1.0,1.0,1.0,1.0,1.0
+TF-IDF + engineered features + Logistic Regression,1.0,1.0,1.0,1.0,1.0

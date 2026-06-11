@@ -1,0 +1,128 @@
+id,label,text,source
+upgrade_scam_001,scam,Your ABA account is locked. Verify now and enter your OTP to restore access.,real_life_upgrade
+upgrade_scam_002,scam,ACLEDA security alert: click the link and confirm your password today.,real_life_upgrade
+upgrade_scam_003,scam,Wing support: send your verification code so we can protect your wallet.,real_life_upgrade
+upgrade_scam_004,scam,Bakong transfer pending. Pay 3 USD delivery fee to release the money.,real_life_upgrade
+upgrade_scam_005,scam,"Congratulations, you won 500 USD. Send your bank account number and phone number.",real_life_upgrade
+upgrade_scam_006,scam,Your parcel cannot be delivered. Pay the customs fee through this link.,real_life_upgrade
+upgrade_scam_007,scam,Your loan is approved. Pay a processing fee before 5 PM.,real_life_upgrade
+upgrade_scam_008,scam,Work from home job available. Deposit 10 USD for training and receive salary tomorrow.,real_life_upgrade
+upgrade_scam_009,scam,Investment opportunity: guaranteed 30 percent profit today. Transfer money now.,real_life_upgrade
+upgrade_scam_010,scam,Casino bonus: 60 percent first deposit and 8.8 USD app bonus. Send ABA deposit screenshot.,real_life_upgrade
+upgrade_scam_011,scam,Telegram admin: your account will be suspended. Share login code to verify.,real_life_upgrade
+upgrade_scam_012,scam,Facebook page support: give us your password to recover your page.,real_life_upgrade
+upgrade_scam_013,scam,Email quota full. Login now and update your password to avoid deactivation.,real_life_upgrade
+upgrade_scam_014,scam,Final warning: your bank card is blocked. Enter CVV and OTP to unlock.,real_life_upgrade
+upgrade_scam_015,scam,"Refund approved. Submit card number, expiry date, and CVV.",real_life_upgrade
+upgrade_scam_016,scam,I am bank staff. Tell me your PIN so I can check the failed transaction.,real_life_upgrade
+upgrade_scam_017,scam,"Urgent, send your seed phrase to validate your wallet.",real_life_upgrade
+upgrade_scam_018,scam,You received money from abroad. Pay clearance fee before withdrawal.,real_life_upgrade
+upgrade_scam_019,scam,Click here to claim government cash support and provide account details.,real_life_upgrade
+upgrade_scam_020,scam,Your electricity bill has an error. Pay this small fee to avoid disconnection.,real_life_upgrade
+upgrade_scam_021,scam,"Dear valued customer, please send your account information such as account number, OTP, and PIN to supportverify9899@gmail.com.",real_life_upgrade
+upgrade_scam_022,scam,"Dear customer, provide your private information, bank details, and verification code to this email to keep your account active.",real_life_upgrade
+upgrade_scam_023,scam,"Bank security review: reply with your account number, PIN, and OTP so our staff can unlock your account.",real_life_upgrade
+upgrade_scam_024,scam,Telegram support: send your login code and phone number to @secure_admin to prevent account suspension.,real_life_upgrade
+upgrade_scam_025,scam,"Your identity verification failed. Submit ID card, date of birth, account number, and OTP by email today.",real_life_upgrade
+upgrade_scam_026,scam,"ABA notice: please send account info, password, and OTP to the agent on WhatsApp for urgent verification.",real_life_upgrade
+upgrade_scam_027,scam,Facebook security team: provide your page password and login code to this email before midnight.,real_life_upgrade
+upgrade_scam_028,scam,"Wallet verification required. Send seed phrase, private key, and phone number to restore access.",real_life_upgrade
+upgrade_scam_029,scam,"Human resources selected you for a remote job. Submit passport, bank account, and pay training fee first.",real_life_upgrade
+upgrade_scam_030,scam,Invoice payment update: finance team must wire the balance to the new supplier account below today.,real_life_upgrade
+upgrade_scam_031,scam,Security alert: your email account will be disabled today. Click the link and enter your password to keep access.,real_life_upgrade
+upgrade_scam_032,scam,Your bank profile is incomplete. Verify your identity at this secure link and submit your OTP.,real_life_upgrade
+upgrade_scam_033,scam,Microsoft 365 notice: mailbox storage is full. Login now to avoid losing incoming emails.,real_life_upgrade
+upgrade_scam_034,scam,We detected unusual activity on your wallet. Confirm your seed phrase to restore access.,real_life_upgrade
+upgrade_scam_035,scam,"I love you and want to visit you soon, but my card is blocked. Please send 300 USD for my ticket.",real_life_upgrade
+upgrade_scam_036,scam,My family has an emergency and I trust only you. Transfer money today and I will repay you after we meet.,real_life_upgrade
+upgrade_scam_037,scam,Please keep our relationship private. Buy gift cards and send the codes so I can solve my problem.,real_life_upgrade
+upgrade_scam_038,scam,I am stuck overseas and cannot video call. Send money to help me come to Cambodia.,real_life_upgrade
+upgrade_scam_039,scam,"Guaranteed crypto profit: deposit 100 USD today and withdraw 1,000 USD tomorrow.",real_life_upgrade
+upgrade_scam_040,scam,Exclusive investment group. Transfer money now and earn 30 percent every week with no risk.,real_life_upgrade
+upgrade_scam_041,scam,Your trading account has profit waiting. Pay the release tax before withdrawal.,real_life_upgrade
+upgrade_scam_042,scam,"Join our gold investment plan. Limited seats, send ABA transfer screenshot to activate.",real_life_upgrade
+upgrade_scam_043,scam,Your Telegram account will be locked. Send the login code to verify ownership.,real_life_upgrade
+upgrade_scam_044,scam,Facebook support: your page violates policy. Provide password and verification code to appeal.,real_life_upgrade
+upgrade_scam_045,scam,Someone tried to access your bank account. Reply with OTP so we can secure it.,real_life_upgrade
+upgrade_scam_046,scam,"Your SIM card registration failed. Submit ID number, date of birth, and PIN immediately.",real_life_upgrade
+upgrade_scam_047,scam,I want to buy your phone. I sent extra payment by courier escrow; pay the delivery fee to receive funds.,real_life_upgrade
+upgrade_scam_048,scam,Your marketplace order is confirmed. Click the link and enter card details to release payment.,real_life_upgrade
+upgrade_scam_049,scam,Seller protection requires a refundable verification fee before we send the buyer money.,real_life_upgrade
+upgrade_scam_050,scam,The buyer paid through secure shipping. Pay customs first so the payment can appear in your account.,real_life_upgrade
+upgrade_scam_051,scam,We recorded your private video. Pay 500 USD in Bitcoin within 24 hours or we send it to your contacts.,real_life_upgrade
+upgrade_scam_052,scam,Final warning from police department: pay this fine now or your case will be sent to court.,real_life_upgrade
+upgrade_scam_053,scam,Your phone is hacked. Transfer money to this wallet or all photos will be leaked.,real_life_upgrade
+upgrade_scam_054,scam,You missed a legal notice. Click here and pay the penalty immediately to avoid arrest.,real_life_upgrade
+upgrade_scam_055,scam,Remote job approved. Pay 15 USD registration fee and submit your bank account to receive salary.,real_life_upgrade
+upgrade_scam_056,scam,Work from home: complete tasks and earn daily commission. Deposit first to unlock higher orders.,real_life_upgrade
+upgrade_scam_057,scam,"HR department selected you. Send passport copy, bank account, and training payment today.",real_life_upgrade
+upgrade_scam_058,scam,Part-time job on Telegram. Transfer money to activate your employee account.,real_life_upgrade
+upgrade_scam_059,scam,You have received an inheritance fund. Pay clearance fee and submit bank details to claim.,real_life_upgrade
+upgrade_scam_060,scam,"Congratulations, you won a cash prize. Send your account number and OTP to receive money.",real_life_upgrade
+upgrade_scam_061,scam,Government refund available. Click the link and enter card number before midnight.,real_life_upgrade
+upgrade_scam_062,scam,International transfer pending. Pay anti-money-laundering certificate fee to release funds.,real_life_upgrade
+upgrade_scam_063,scam,"Hi finance team, I am in a meeting. Urgently wire 18,750 USD to this new supplier account today.",real_life_upgrade
+upgrade_scam_064,scam,Please update vendor banking details to the attached account and process payment before 3 PM.,real_life_upgrade
+upgrade_scam_065,scam,CEO request: buy gift cards for clients and send me the codes by email.,real_life_upgrade
+upgrade_scam_066,scam,Our invoice bank account changed. Kindly pay the outstanding balance to the new account below.,real_life_upgrade
+upgrade_scam_067,scam,We recovered your lost scam money. Pay a small processing fee so we can return the full amount.,real_life_upgrade
+upgrade_scam_068,scam,Anti-fraud agency notice: your stolen funds are ready. Send ID and transfer recovery tax today.,real_life_upgrade
+upgrade_scam_069,scam,Crypto recovery expert here. Pay upfront wallet validation fee and we restore your coins.,real_life_upgrade
+upgrade_scam_070,scam,Your previous investment loss can be refunded. Click the link and enter bank details.,real_life_upgrade
+upgrade_scam_071,scam,Urgent disaster donation: send money to this personal ABA account to help victims now.,real_life_upgrade
+upgrade_scam_072,scam,Charity for sick children. Transfer today; no receipt available because the hospital needs cash.,real_life_upgrade
+upgrade_scam_073,scam,Temple rebuilding fund: send your card details and OTP to complete donation.,real_life_upgrade
+upgrade_scam_074,scam,Emergency fundraiser. Click this shortened link and pay immediately before campaign closes.,real_life_upgrade
+upgrade_scam_075,scam,គណនី ABA របស់អ្នកត្រូវបានចាក់សោ សូមផ្ញើ OTP ដើម្បីបើកវិញភ្លាមៗ,real_life_upgrade
+upgrade_scam_076,scam,សូមផ្ញើលេខសម្ងាត់គណនីរបស់អ្នក ដើម្បីបញ្ជាក់ការទូទាត់,real_life_upgrade
+upgrade_scam_077,scam,អ្នកឈ្នះរង្វាន់ ៥០០ ដុល្លារ សូមផ្តល់លេខគណនីធនាគារ,real_life_upgrade
+upgrade_scam_078,scam,បន្ទាន់ កញ្ចប់របស់អ្នកមិនអាចដឹកជញ្ជូនបាន សូមបង់ថ្លៃសេវាតាមតំណនេះ,real_life_upgrade
+upgrade_scam_079,scam,កម្ចីរបស់អ្នកអនុម័តហើយ សូមផ្ទេរប្រាក់ថ្លៃសេវាមុនពេលទទួលលុយ,real_life_upgrade
+upgrade_scam_080,scam,ការងារអនឡាញ បង់ប្រាក់ចុះឈ្មោះ ១០ ដុល្លារ ហើយទទួលប្រាក់ខែ,real_life_upgrade
+upgrade_scam_081,scam,វិនិយោគថ្ងៃនេះបានចំណេញខ្ពស់ សូមផ្ទេរប្រាក់ឥឡូវនេះ,real_life_upgrade
+upgrade_scam_082,scam,បាការ៉ាត់ និងហ្គេមអនឡាញ ប្រាក់បន្ថែម ៦០ ភាគរយ សូមដាក់ប្រាក់តាម ABA,real_life_upgrade
+upgrade_scam_083,scam,គណនី Telegram របស់អ្នកនឹងត្រូវបិទ សូមផ្ញើលេខកូដចូលប្រើ,real_life_upgrade
+upgrade_scam_084,scam,ទំព័រ Facebook របស់អ្នកមានបញ្ហា សូមផ្ញើពាក្យសម្ងាត់ដើម្បីស្តារវិញ,real_life_upgrade
+upgrade_scam_085,scam,សូមចុចតំណនេះ ហើយបញ្ចូលលេខកាត និង CVV ដើម្បីទទួលប្រាក់សងវិញ,real_life_upgrade
+upgrade_scam_086,scam,សូមផ្ញើលេខកូដសម្ងាត់ ឬ OTP ដើម្បីទទួលប្រាក់ពីបរទេស,real_life_upgrade
+upgrade_safe_001,safe,"Never share your OTP, password, PIN, CVV, or bank account number with anyone.",real_life_upgrade
+upgrade_safe_002,safe,ABA staff will never ask for your password or OTP by SMS.,real_life_upgrade
+upgrade_safe_003,safe,"If a message asks for money or OTP, contact the company using the official app.",real_life_upgrade
+upgrade_safe_004,safe,This training explains how delivery fee scams work and how to report them.,real_life_upgrade
+upgrade_safe_005,safe,The bank warning says do not click unknown links or share verification codes.,real_life_upgrade
+upgrade_safe_006,safe,My teacher asked us to write examples of phishing messages for class.,real_life_upgrade
+upgrade_safe_007,safe,The report describes fake job scams but does not ask users to send money.,real_life_upgrade
+upgrade_safe_008,safe,"Please screenshot suspicious messages and report them, but never reply.",real_life_upgrade
+upgrade_safe_009,safe,Official public notice: heavy rain is expected in several provinces. Stay safe.,real_life_upgrade
+upgrade_safe_010,safe,Weather alert from the ministry: please be careful during flooding.,real_life_upgrade
+upgrade_safe_011,safe,Your parcel was delivered successfully. No fee is required.,real_life_upgrade
+upgrade_safe_012,safe,Meeting reminder: bring your laptop and assignment notebook tomorrow.,real_life_upgrade
+upgrade_safe_013,safe,Do not paste real private information into scam checking apps.,real_life_upgrade
+upgrade_safe_014,safe,A safe message may mention OTP only to warn people not to share it.,real_life_upgrade
+upgrade_safe_015,safe,"Security education: no real bank asks customers to send account information, OTP, or PIN to a Gmail address.",real_life_upgrade
+upgrade_safe_016,safe,"Class example: a message asking for account number, OTP, and PIN is dangerous and should be reported.",real_life_upgrade
+upgrade_safe_017,safe,"Awareness notice: never send private information through email, Telegram, WhatsApp, or SMS.",real_life_upgrade
+upgrade_safe_018,safe,Portfolio demo note: test messages should use fake OTP and fake account numbers only.,real_life_upgrade
+upgrade_safe_019,safe,"Safe banking reminder: official support will not ask for your password, PIN, CVV, or seed phrase.",real_life_upgrade
+upgrade_safe_020,safe,"Training example: if someone asks for bank details by email, block and report the message.",real_life_upgrade
+upgrade_safe_021,safe,This article explains phishing scams and reminds readers never to enter passwords from email links.,real_life_upgrade
+upgrade_safe_022,safe,Relationship scam awareness training: do not send money to someone you have never met in person.,real_life_upgrade
+upgrade_safe_023,safe,Investment safety lesson: guaranteed high returns with no risk are a warning sign.,real_life_upgrade
+upgrade_safe_024,safe,Account takeover prevention: enable two-factor authentication and never share login codes.,real_life_upgrade
+upgrade_safe_025,safe,Marketplace safety guide: meet in public places and do not pay verification fees.,real_life_upgrade
+upgrade_safe_026,safe,Threat scam warning: report blackmail messages and do not pay attackers.,real_life_upgrade
+upgrade_safe_027,safe,Job scam education: real employers do not ask applicants to pay a fee before starting work.,real_life_upgrade
+upgrade_safe_028,safe,Unexpected money scam warning: inheritance and prize messages asking for fees are suspicious.,real_life_upgrade
+upgrade_safe_029,safe,Business email compromise training: verify bank-account changes by phone before payment.,real_life_upgrade
+upgrade_safe_030,safe,Money recovery scam warning: recovery agents asking upfront fees are often scammers.,real_life_upgrade
+upgrade_safe_031,safe,Donation safety notice: donate only through official charity websites and request receipts.,real_life_upgrade
+upgrade_safe_032,safe,NoDrug public health message: download and use the app together for a Cambodia without drugs.,real_life_upgrade
+upgrade_safe_033,safe,HIV prevention awareness: stay informed and protect your health through official public campaigns.,real_life_upgrade
+upgrade_safe_034,safe,សូមកុំផ្ញើ OTP ពាក្យសម្ងាត់ PIN ឬលេខគណនីទៅអ្នកណាម្នាក់,real_life_upgrade
+upgrade_safe_035,safe,ធនាគារមិនសួរពាក្យសម្ងាត់ ឬ OTP តាមសារទេ,real_life_upgrade
+upgrade_safe_036,safe,បើមានសារសួរប្រាក់ ឬលេខកូដ សូមទាក់ទងតាមកម្មវិធីផ្លូវការ,real_life_upgrade
+upgrade_safe_037,safe,ការបណ្តុះបណ្តាលនេះពន្យល់ពីការបោកបញ្ឆោតតាមសារ,real_life_upgrade
+upgrade_safe_038,safe,សារជូនដំណឹងសាធារណៈអំពីភ្លៀងខ្លាំង សូមប្រុងប្រយ័ត្ន,real_life_upgrade
+upgrade_safe_039,safe,ក្រសួងជូនដំណឹងអំពីអាកាសធាតុ មិនសួរលេខសម្ងាត់ទេ,real_life_upgrade
+upgrade_safe_040,safe,សូមរាយការណ៍សារដែលសួរ OTP ឬប្រាក់ តែកុំឆ្លើយតប,real_life_upgrade
+upgrade_safe_041,safe,សារសុវត្ថិភាព៖ កុំចុចតំណមិនស្គាល់ និងកុំចែករំលែកលេខកូដ,real_life_upgrade

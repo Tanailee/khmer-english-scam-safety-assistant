@@ -1,0 +1,6 @@
+text,ml_probability,rule_score,hybrid_probability,prediction,signals
+Give me you account password,0.524047589815281,4,0.8,scam,['Requests private credentials or account secrets']
+Never give anyone your account password,0.5586464953449425,0,0.2,safe,['Educational/protective context detected']
+Please send your OTP code now to keep your account active,0.8562562790408759,6,0.99,scam,"['Requests private credentials or account secrets', 'Uses urgency or account-pressure language', 'Combines trusted service wording with action request']"
+Can you explain how to create a strong password?,0.002857214609831277,0,0.002857214609831277,safe,[]
+Your package is delayed. Pay the small fee at http://delivery-check.example,0.9882826184852948,4,0.9882826184852948,scam,"['Contains a link', 'Mentions money, fee, refund, or prize']"
