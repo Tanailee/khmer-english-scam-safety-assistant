@@ -249,8 +249,48 @@ def load_model():
 
 @st.cache_data
 def load_wordlists():
-    safe_words = set(tokenize((SOURCE_DIR / "safe-words.txt").read_text(encoding="utf-8", errors="ignore")))
-    scam_words = set(tokenize((SOURCE_DIR / "scam-indicator-words.txt").read_text(encoding="utf-8", errors="ignore")))
+    safe_candidates = [ROOT / "safe-words.txt", SOURCE_DIR / "safe-words.txt"]
+    scam_candidates = [ROOT / "scam-indicator-words.txt", SOURCE_DIR / "scam-indicator-words.txt"]
+
+    safe_text = ""
+    scam_text = ""
+    for candidate in safe_candidates:
+        if candidate.exists():
+            safe_text = candidate.read_text(encoding="utf-8", errors="ignore")
+            break
+    for candidate in scam_candidates:
+        if candidate.exists():
+            scam_text = candidate.read_text(encoding="utf-8", errors="ignore")
+            break
+
+    if not safe_text or not scam_text:
+        safe_text = safe_text or (
+            "safe thanks meeting schedule reminder project class homework assignment "
+            "education awareness protect warning never avoid official public notice "
+            "weather health delivered regards practice submit"
+        )
+        scam_text = scam_text or (
+            "otp password pin cvv account number verify urgent locked suspended prize "
+            "reward claim click link fee payment transfer loan job investment crypto "
+            "delivery parcel casino deposit bonus bank support seed phrase private key"
+        )
+        if DATA_PATH.exists():
+            df = pd.read_csv(DATA_PATH, usecols=["label", "text"])
+            for label, target in [("safe", "safe_text"), ("scam", "scam_text")]:
+                sample_text = " ".join(
+                    df[df["label"].astype(str).str.lower().eq(label)]["text"]
+                    .dropna()
+                    .astype(str)
+                    .sample(min(1000, int((df["label"].astype(str).str.lower().eq(label)).sum())), random_state=42)
+                    .tolist()
+                )
+                if target == "safe_text":
+                    safe_text += " " + sample_text
+                else:
+                    scam_text += " " + sample_text
+
+    safe_words = set(tokenize(safe_text))
+    scam_words = set(tokenize(scam_text))
     return safe_words, scam_words
 
 
