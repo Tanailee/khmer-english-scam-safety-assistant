@@ -144,3 +144,9 @@ This app does not need real passwords, OTPs, bank account numbers, card numbers,
 - Better Khmer OCR and mobile screenshot parsing.
 - Privacy-preserving browser/email/SMS integration.
 - Human-in-the-loop review for high-risk or uncertain cases.
+
+## Live Demo
+
+Try the deployed Streamlit app here:
+
+https://khmer-english-scam-safety-assistant-4ctbgtk28jkfhfw4hkcijn.streamlit.app/
